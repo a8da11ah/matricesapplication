@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styelImg.css">
+    <title>Matrix-Project</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="background"></div>
+
+        <header>
+            <nav>
+                <div class="navigation">
+                    <a href="index1.html">Home</a>
+                    <a href="calculator.html">Calculator</a>
+                    <a href="filters.html">Filters</a>
+                    <a href="other2.html">Other</a>
+                </div>
+            </nav>
+        </header>   
+
+
+        <main id="main">
+            <div class="image-container" id="image-container">
+
+                <img id="previewImage" alt="Selected Image Preview"  />
+
+                <div id="dropZone">
+                    <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                    <label for="imageInput" id="customImageInput">Choose an image</label>
+                    <h3>Or <br> drop Image</h3>
+
+                </div>
+            </div>
+            <div class="effects"> 
+                <div class="bars">
+                    <div>
+                        <p>Blur</p>
+                        <input type="range" min="0" max="100" value="0" class="blurSlider" id="blurRange">
+                    </div>
+                    <div>
+                        <p>red</p>
+                        <input type="range" min="0" max="255" value="0" class="redrSlider" id="redRange">
+                    </div>
+                    <div>
+                        <p>green</p>
+                        <input type="range" min="0" max="255" value="0" class="greenSlider" id="greenRange">
+                    </div>
+                    <div>
+                        <p>blue</p>
+                        <input type="range" min="0" max="255" value="0" class="blueSlider" id="blurRange">
+                    </div>
+                   
+
+                </div>
+                <div class="filters">
+                    <button onclick="reset()">Reset</button>
+                    <button onclick="grayEffect()" id="gray">Gray</button>
+                    <!-- <button onclick="blurEffect()">Blur</button> -->
+                    <button onclick="sepiaEffect()">Sepia</button>
+                    <button onclick="invertEffect()">invert</button>
+                    <!-- <button onclick="edgeEffect()">edge</button> -->
+
+                    
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+
+        <footer></footer>
+    </div>
+    <script src="imagesProcessing.js"  ></script>
+
+</body>
+</html>

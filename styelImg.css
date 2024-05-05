@@ -1,0 +1,118 @@
+img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+main{
+    /* padding: 5px; */
+    /* background-color: rgba(71, 255, 194, 0.377); */
+}
+
+.image-container{
+
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.137);
+    width: 100%;
+    height: 28em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.effects{
+    background-color: rgba(255, 255, 255, 0.137);
+    width: 100%;
+    height: 7em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+
+}
+.filters {
+    border-radius: 15px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    /* background-color: rgba(73, 150, 150, 0.349); */
+    height: 100%;
+    width: fit-content;
+}
+.effects button{
+    margin: 10px;
+    font-size: larger;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+.bars{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: fit-content;
+    /* background-color: rgba(73, 150, 150, 0.349); */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.bars div{
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bars div p{
+    text-align: center;
+    width: 55px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius: 15px;
+    /* margin: 2px; */
+}
+.bars div p:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.315);
+
+}
+
+.redrSlider{
+    color: red;
+}
+
+#dropZone{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(232, 233, 229, 0.519);
+    width: 400px;
+    height: 300px;
+    border-radius: 60px;
+}
+#dropZone h3{
+    text-align: center;
+}
+
+#customImageInput {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+#customImageInput:hover {
+background-color: #18181862;
+color: white;
+}
+#previewImage {
+    display:none;
+    object-fit: cover;
+  }
+  
